@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-learning</title>
+    <style>
+        .grid-container{
+            height: 90vh;
+            border: 1px solid black;
+            background-color: aliceblue;
+
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-template-rows: repeat(4, auto);
+            grid-gap: 2px;
+        }
+        .one{
+            background-color: aqua;
+        }
+        .two{
+            background-color: blueviolet;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .th{
+            background-color:chartreuse;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        .fr{
+            background-color:chocolate;
+            
+        }
+        .fv{
+            background-color:deeppink;
+        }
+        .six{
+            background-color:darkmagenta;
+        }
+        .sev{
+            background-color: rgb(83, 245, 97);
+        }
+        .eigh{
+            background-color:darkcyan;
+        }
+        .nine{
+            background-color:darkolivegreen;
+        }
+        .ten{
+            background-color:aqua;
+        }
+        .elev{
+            background-color:gold;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 5; 
+        }
+        .twel{
+            background-color:rgb(228, 50, 86);
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item one">one</div>
+        <div class="item two">two</div>
+        <div class="item th">three</div>
+        <div class="item fr">four</div>
+        <div class="item fv">five</div>
+        <div class="item six">six</div>
+        <div class="item sev">seven</div>
+        <div class="item eigh">eight</div>
+        <div class="item nine">nine</div>
+        <div class="item ten">ten</div>
+        <div class="item elev">eleven</div>
+        <div class="item twel">twelve</div>
+        
+    </div>
+</body>
+</html>
+        
